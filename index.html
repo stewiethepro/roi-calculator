@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Onepage Corporate | Front - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../../favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/leaflet/dist/leaflet.css">
+  <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css">
+  <link rel="stylesheet" href="../../assets/vendor/ion-rangeslider/css/ion.rangeSlider.css">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="../../assets/css/theme.css">
+</head>
+<body id="homeSection">
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="vh-100" id="content" role="main">
+
+    <!-- Step Form -->
+    <form class="js-step-form"
+          data-hs-step-form-options='{
+            "progressSelector": "#basicStepFormProgress",
+            "stepsSelector": "#basicStepFormContent"
+          }'>
+
+      <!-- Content Step Form -->
+      <div id="basicStepFormContent" class="border rounded p-4">
+        <div id="basicSelectStepOne" class="active">
+
+          <!-- Employees Slider -->
+          <div class="container space-2">
+            <div class="row space-2 justify-content-lg-center">
+              <h2 class="">How many people work at your organisation?</h2>
+            </div>
+            <div class="row space-2 justify-content-lg-center">
+              <div class="col-md-8 mb-7 mb-md-0">
+                <!-- Stats -->
+                <!-- Range Slider -->
+                <input id="employeesSlider" class="js-ion-range-slider" type="text">
+                <!-- End Range Slider -->
+                <!-- End Stats -->
+              </div>
+
+              <div class="col-md-4">
+                <!-- Stats -->
+                <div class="mt-4 mx-8">
+                  <label class="input-label text-muted" for="employeesInput">Number of employees</label>
+                  <input type="text" id="employeesInput" class="js-ion-input form-control" value="0">
+                </div>
+                <!-- End Stats -->
+              </div>
+            </div>
+          </div>
+          <!-- End Employees Slider -->
+
+          <div class="d-flex justify-content-end">
+            <button type="button" class="btn btn-sm btn-primary mr-1"
+                    data-hs-step-form-next-options='{
+                      "targetSelector": "#basicSelectStepTwo"
+                    }'>Next</button>
+          </div>
+        </div>
+
+        <div id="basicSelectStepTwo" style="display: none;">
+
+          <!-- Meetings Slider -->
+          <div class="container space-2">
+            <div class="row space-2 justify-content-lg-center">
+              <div class="">
+                <h2>On average, how many meetings does an employee have per day?</h2>
+              </div>
+            </div>
+            <div class="row space-2 justify-content-lg-center">
+              <div class="col-md-8 mb-7 mb-md-0">
+                <!-- Stats -->
+                <!-- Range Slider -->
+                <input id="meetingsSlider" class="js-ion-range-slider" type="text">
+                <!-- End Range Slider -->
+                <!-- End Stats -->
+              </div>
+
+              <div class="col-md-4">
+                <!-- Stats -->
+                <div class="mt-4 mx-8">
+                  <label class="input-label text-muted" for="timeInput">Meetings per day</label>
+                  <input type="text" id="meetingsInput" class="js-ion-input form-control" value="0">
+                </div>
+                <!-- End Stats -->
+              </div>
+            </div>
+          </div>
+          <!-- End Meetings Slider -->
+
+          <div class="d-flex justify-content-end">
+            <a class="btn btn-sm btn-soft-secondary mr-1" href="javascript:;"
+               data-hs-step-form-prev-options='{
+                 "targetSelector": "#basicSelectStepOne"
+               }'>Back</a>
+            <button type="button" class="btn btn-sm btn-primary"
+                    data-hs-step-form-next-options='{
+                      "targetSelector": "#basicSelectStepThree"
+                    }'>Next</button>
+          </div>
+        </div>
+
+        <div id="basicSelectStepThree" style="display: none;">
+
+          <!-- Time Slider -->
+          <div class="container space-2">
+            <div class="row space-2 justify-content-lg-center">
+              <div class="">
+                <h2>How much time do you spend scheduling each meeting?</h2>
+              </div>
+            </div>
+            <div class="row space-2 justify-content-lg-center">
+              <div class="col-md-8 mb-7 mb-md-0">
+                <!-- Stats -->
+                <!-- Range Slider -->
+                <input id="timeSlider" class="js-ion-range-slider" type="text">
+                <!-- End Range Slider -->
+                <!-- End Stats -->
+              </div>
+
+              <div class="col-md-4">
+                <!-- Stats -->
+                <div class="mt-4 mx-8">
+                  <label class="input-label text-muted" for="timeInput">Time spent scheduling</label>
+                  <input type="text" id="timeInput" class="js-ion-input form-control" value="0">
+                </div>
+                <!-- End Stats -->
+              </div>
+            </div>
+          </div>
+          <!-- End Time Slider -->
+
+          <div class="d-flex justify-content-end">
+            <a class="btn btn-sm btn-soft-secondary mr-1" href="javascript:;"
+               data-hs-step-form-prev-options='{
+                 "targetSelector": "#basicSelectStepTwo"
+               }'>Back</a>
+            <button type="button" class="btn btn-sm btn-primary transition-3d-hover"
+                    data-hs-step-form-next-options='{
+                      "targetSelector": "#basicSelectStepFour"
+                    }'>Next</button>
+          </div>
+        </div>
+
+        <div id="basicSelectStepFour" style="display: none;">
+
+          <!-- Cost Slider -->
+          <div class="container space-2">
+            <div class="row space-2 justify-content-lg-center">
+              <div class="">
+                <h2>On average, what is the dollar value of an employee's time?</h2>
+              </div>
+            </div>
+            <div class="row space-2 justify-content-lg-center">
+              <div class="col-md-8 mb-7 mb-md-0">
+                <!-- Stats -->
+                <!-- Range Slider -->
+                <input id="costSlider" class="js-ion-range-slider" type="text">
+                <!-- End Range Slider -->
+                <!-- End Stats -->
+              </div>
+
+              <div class="col-md-4">
+                <!-- Stats -->
+                <div class="mt-4 mx-8">
+                  <label class="input-label text-muted" for="costInput">Cost of employee time</label>
+                  <input type="text" id="costInput" class="js-ion-input form-control" value="0">
+                </div>
+                <!-- End Stats -->
+              </div>
+            </div>
+          </div>
+          <!-- End Cost Slider -->
+
+          <div class="d-flex justify-content-end">
+            <a class="btn btn-sm btn-soft-secondary mr-1" href="javascript:;"
+               data-hs-step-form-prev-options='{
+                 "targetSelector": "#basicSelectStepThree"
+               }'>Back</a>
+            <button type="button" class="btn btn-sm btn-primary"
+                    data-hs-step-form-next-options='{
+                      "targetSelector": "#basicSelectStepFive"
+                    }'>Calculate</button>
+          </div>
+        </div>
+
+        <div id="basicSelectStepFive" style="display: none;">
+
+          <!-- Values -->
+          <div class="container space-4">
+            <div class="row space-1 justify-content-lg-center">
+              <div class="col-md-4 mb-7 mb-md-0">
+                <!-- Stats -->
+                <a class="d-block text-center px-md-3">
+                  <span id="hoursSaved" class="d-block h3"></span>
+                  <p class="text-body">hours saved per year</p>
+                </a>
+                <!-- End Stats -->
+              </div>
+
+              <div class="col-md-4 mb-7 mb-md-0">
+                <!-- Stats -->
+                <a class="d-block text-center column-divider-md column-divider-20deg px-md-3">
+                  <span id="moneySaved" class="d-block h3"></span>
+                  <p class="text-body">saved per year</p>
+                </a>
+                <!-- End Stats -->
+              </div>
+
+              <div class="col-md-4">
+                <!-- Stats -->
+                <a class="d-block text-center column-divider-md column-divider-20deg px-md-3">
+                  <span id="ROI" class="d-block h3"></span>
+                  <p class="text-body">return on investment</p>
+                </a>
+                <!-- End Stats -->
+              </div>
+            </div>
+          </div>
+          <!-- End Values -->
+
+          <div class="d-flex justify-content-end">
+            <a class="btn btn-sm btn-soft-secondary mr-1" href="javascript:;"
+               data-hs-step-form-prev-options='{
+                 "targetSelector": "#basicSelectStepFour"
+               }'>Back</a>
+            <a class="btn btn-sm btn-soft-primary mr-1" href="javascript:;"
+               data-hs-step-form-prev-options='{
+                 "targetSelector": "#basicSelectStepOne"
+               }'>Start Again</a>
+          </div>
+        </div>
+      </div>
+      <!-- End Content Step Form -->
+    </form>
+    <!-- End Step Form -->
+
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- JS Global Compulsory -->
+  <script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="../../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="../../assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="../../assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="../../assets/vendor/hs-unfold/dist/hs-unfold.min.js"></script>
+  <script src="../../assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="../../assets/vendor/hs-scroll-nav/dist/hs-scroll-nav.min.js"></script>
+  <script src="../../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="../../assets/vendor/leaflet/dist/leaflet.js"></script>
+  <script src="../../assets/vendor/aos/dist/aos.js"></script>
+  <script src="../../assets/vendor/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+  <script src="../../assets/vendor/hs-step-form/dist/hs-step-form.min.js"></script>
+
+  <!-- JS Front -->
+  <script src="../../assets/js/hs.core.js"></script>
+  <script src="../../assets/js/hs.validation.js"></script>
+  <script src="../../assets/js/hs.leaflet.js"></script>
+  <script src="../../assets/js/hs.ion-range-slider.js"></script>
+
+  <!-- JS Numeral -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+
+  <!-- JS Custom (sliders) -->
+  <script src="../../assets/js/theme-custom.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+
+      // initialization of ion range slider
+      $('.js-ion-range-slider').each(function () {
+        $.HSCore.components.HSIonRangeSlider.init($(this));
+      });
+
+      // initialization of form validation
+      $('.js-validate').each(function () {
+        var validation = $.HSCore.components.HSValidation.init($(this));
+      });
+
+      // initialization of step form
+      $('.js-step-form').each(function () {
+        var stepForm = new HSStepForm($(this)).init();
+      });
+
+    });
+  </script>
+
+  <!-- IE Support -->
+  <script>
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="../../assets/vendor/polifills.js"><\/script>');
+  </script>
+</body>
+</html>
